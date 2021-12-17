@@ -1,0 +1,5 @@
+Import java.lang.System in SearchDriver.java to gather necessary time-recording tools. 
+In the same file, create two methods. 
+- The first method will record time by implementing the currentTimeMillis() method.
+- The second method will create a long array. 
+  = While it can have as many indices as wanted, we will only need two indices , one for the start time, and one for the end time. 
