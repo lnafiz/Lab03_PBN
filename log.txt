@@ -3,10 +3,16 @@
 // Lab03
 // 2021-12-16
 
-2021-12-16 
+2021-12-16 12:15 UST
 - Started planning our approach on proving hypothesis "“Relative to the size of the dataset, binary search is faster than linear search."
 - Would use TimeMillis to serve as a "timestamp" at the beginning and end of each search. 
 - We would subtract the beginning and end times to get the duration of the search. 
 - Discussed where we would place these timestamps in order to get the most accurate data
   - Populate array prior to timestamp, as we want to measure time for ONLY the search
 - Would use TimeMillis in the main method of the Driver file, as we want to measure the real time for each method invokation rather than time for each iteration.
+
+
+2021-12-17 12:15 UST
+- After reviewing issues on our plan and feedback from Mr.Mykolyk, we realized we needed to continue expanding our arrays since our hypothesis is relative to size. - We can do this by using _size and expand() that we implemented in SuperArray.
+- Originally thought we would repeat runs of each search method around only 10 times. However, Java has a lot of computing power and our total time for every search should take a few minutes or so. 
+- Therefore, we should repeat and time each search 100 or more times. 
