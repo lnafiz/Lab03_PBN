@@ -7,4 +7,4 @@ DISCO:
 - You can use currentTimeMillis() to get the current time as a long value.
 
 QCC:
-- None (so far)
+- Why does TimeMillis use midnight January 1st, 1970 as the standard for time computation?  
