@@ -1,5 +1,7 @@
-Import java.lang.System in SearchDriver.java to gather necessary time-recording tools. 
-In the same file, create two methods. 
+0. Import java.lang.System in SearchDriver.java to gather necessary time-recording tools. 
+1. In the same file, create two methods. 
 - The first method will record time by implementing the currentTimeMillis() method.
 - The second method will create a long array. 
-  = While it can have as many indices as wanted, we will only need two indices , one for the start time, and one for the end time. 
+2. Move the tests from the main methods in LinSearch.java and BinSearch.java to SearchDriver.java.
+3. The first thing in the main method should be initializations of two long arrays, one for each type of search.
+4. Right after the initialization 
