@@ -1,3 +1,8 @@
+// Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
+// APCS pd6
+// Lab03
+// 2021-12-16
+
 2021-12-16 
 - Started planning our approach on proving hypothesis "“Relative to the size of the dataset, binary search is faster than linear search."
 - Would use TimeMillis to serve as a "timestamp" at the beginning and end of each search. 
