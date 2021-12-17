@@ -1,6 +1,7 @@
 // Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
 // APCS pd6
 // Lab03
+
 // 2021-12-16
 
 DISCO:
@@ -8,3 +9,14 @@ DISCO:
 
 QCC:
 - Why does TimeMillis use midnight January 1st, 1970 as the standard for time computation?  
+
+
+// 2021-12-17
+
+DISCO:
+- Our array should be expanding as we test the search methods.
+- We need a lot of repititions for testing (>= 100 times).
+- We can store times in arrays and compute from there rather than waste time with SOPs.
+
+QCC:
+- What errors come up from method currentTimeMillis()?
