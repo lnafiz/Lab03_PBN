@@ -1,30 +1,28 @@
-0. Import java.lang.System in SearchDriver.java to gather necessary time-recording tools. 
-
-1. In the same file, create three methods. 
+0. In the SearchDriver.java file, create three methods. 
 - The first method will record time by implementing the currentTimeMillis() method.
 - The second method will create a long array.
 - The third method will calculate averages.
 
-2. Move the tests from the main methods in LinSearch.java and BinSearch.java to SearchDriver.java.
+1. Move the tests from the main methods in LinSearch.java and BinSearch.java to SearchDriver.java.
 
-3. The first thing in the main method should be initializations of two long arrays, one for each type of search.
+2. The first thing in the main method should be initializations of two long arrays, one for each type of search.
 - Exact indices needed is not clear at the moment, but should have at least 20.
 
-4. Remove any System.out.println statements (they add unnecessary time to the actual search methods).
+3. Remove any System.out.println statements (they add unnecessary time to the actual search methods).
 
-5. Generate test arrays to use search methods on, some with random elements, others as "worst" or "best" scenarios.
+4. Generate test arrays to use search methods on, some with random elements, others as "worst" or "best" scenarios.
 
-6. Implement time recording method right before each search method is called in a test in the main method.
+5. Implement time recording method right before each search method is called in a test in the main method.
 
-7. Store this time in an index of one of the long arrays generated, depending on which search method you just tested.
+6. Store this time in an index of one of the long arrays generated, depending on which search method you just tested.
 
-8. Implement time recording method again right after each search method is called in a test in the main method.
+7. Implement time recording method again right after each search method is called in a test in the main method.
 
-9. Store this time in the next index of the same long array, making sure that beginTime and endTime are next to each other.
+8. Store this time in the next index of the same long array, making sure that beginTime and endTime are next to each other.
 
-10. Repeat 5-8 at least 10 times for each search method, to generate as much times as possible.
+9. Repeat 5-8 at least 10 times for each search method, to generate as much times as possible.
 
-11. After data has been collected, subtract begin times from end times to get time it took to implement the search methods. 
+10. After data has been collected, subtract begin times from end times to get time it took to implement the search methods. 
 
-12. Cauculate average time using average method in order to get a rough estimate of the time it takes to perform each search method.
+11. Cauculate average time using average method in order to get a rough estimate of the time it takes to perform each search method.
 - The method with the lowest average time is the fastest.
