@@ -1,0 +1,10 @@
+// Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
+// APCS pd6
+// Lab03
+// 2021-12-16
+
+DISCO:
+- You can use currentTimeMillis() to get the current time as a long value.
+
+QCC:
+- None (so far)
