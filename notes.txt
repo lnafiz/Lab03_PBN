@@ -24,7 +24,7 @@ QCC:
 // 2021-12-20
 
 DISCO:
-- The search time when we test each index as a target in a one million item array was longer than we initially thought (~8mins), so we realzied we needed to scale our tests down. 
+- The search time when we test each index as a target in a one million item array was longer than we initially thought (~8mins), so we realized we needed to scale our tests down. 
 
 QCC:
 - How many test cases should we have while also having a reasonable run time?
