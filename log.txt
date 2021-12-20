@@ -20,3 +20,8 @@
 2021-12-18 3:10 EST
 - We created an initial test of searching within one individual array, with an intent to later expand these tests into multiple arrays.
 - This serves as an initial proof of concept.
+
+2021-12-20 12:10 EST
+- Initial test had 1 million elements, took around 8 minutes to complete LinSearch, only around a 100ms for BinSearch.
+- We expanded into three test cases, starting with 200 thousand elements and increasing by 200 thousand each time. 
+- We stored our times for each search in two long arrays. These were initalized to have 3 indexes to hold the 3 tests we have so far. May be modified later.
