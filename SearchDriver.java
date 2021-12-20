@@ -10,7 +10,6 @@ public class SearchDriver{
         BinSearch.binSearch(iArr, iArr[i]); // runs binary search on each element of iArr
       }
       long elapsedTime = System.currentTimeMillis() - startTime;
-      // return elapsedTime / iArr.length; // returns avg time for each search
       return elapsedTime; // returns total time for search of all items
     }
 
@@ -20,7 +19,6 @@ public class SearchDriver{
         LinSearch.linSearch(iArr, iArr[i]); // runs linear search on each element of iArr
       }
       long elapsedTime = System.currentTimeMillis() - startTime;
-      // return elapsedTime / iArr.length; // returns avg time for each search
       return elapsedTime; // returns total time for search of all items
     }
 
@@ -59,13 +57,17 @@ public class SearchDriver{
       System.out.println("total time for linear search within test2 (ms): \t" + linTimes[2]);
       System.out.println("total time for binary search within test2 (ms): \t" + binTimes[2]);
 
+      System.out.println();
 
       System.out.println("avg time for linear search within test0 (ms): \t\t" + (linTimes[0] / (double)test0.length));
       System.out.println("avg time for binary search within test0 (ms): \t\t" + (binTimes[0] / (double)test0.length));
+      System.out.println("binary search was " + ((linTimes[0] / (double)test0.length) / (binTimes[0] / (double)test0.length)) + "x faster");
       System.out.println("avg time for linear search within test1 (ms): \t\t" + (linTimes[1] / (double)test1.length));
       System.out.println("avg time for binary search within test1 (ms): \t\t" + (binTimes[1] / (double)test1.length));
+      System.out.println("binary search was " + ((linTimes[1] / (double)test1.length) / (binTimes[1] / (double)test1.length)) + "x faster");
       System.out.println("avg time for linear search within test2 (ms): \t\t" + (linTimes[2] / (double)test2.length));
       System.out.println("avg time for binary search within test2 (ms): \t\t" + (binTimes[2] / (double)test2.length));
+      System.out.println("binary search was " + ((linTimes[2] / (double)test2.length) / (binTimes[2] / (double)test2.length)) + "x faster");
 
     }
 
