@@ -13,6 +13,32 @@ The times stored represent the total time it took to search for every value with
 
 ### Results
 
+total time for linear search within test0 (ms): 	13446
+total time for binary search within test0 (ms): 	20
+total time for linear search within test1 (ms): 	61267
+total time for binary search within test1 (ms): 	30
+total time for linear search within test2 (ms): 	157264
+total time for binary search within test2 (ms): 	45
+avg time for linear search within test0 (ms): 	0.06723
+avg time for binary search within test0 (ms): 	1.0E-4
+avg time for linear search within test1 (ms): 	0.1531675
+avg time for binary search within test1 (ms): 	7.5E-5
+avg time for linear search within test2 (ms): 	0.26210666666666665
+avg time for binary search within test2 (ms): 	7.5E-5
+
+total time for linear search within test0 (ms): 13295
+total time for binary search within test0 (ms): 20
+total time for linear search within test1 (ms): 62569
+total time for binary search within test1 (ms): 30
+total time for linear search within test2 (ms): 154806
+total time for binary search within test2 (ms): 45
+avg time for linear search within test0 (ms): 		0.066475
+avg time for binary search within test0 (ms): 		1.0E-4
+avg time for linear search within test1 (ms): 		0.1564225
+avg time for binary search within test1 (ms): 		7.5E-5
+avg time for linear search within test2 (ms): 		0.25801
+avg time for binary search within test2 (ms): 		7.5E-5
+
 
 
 
