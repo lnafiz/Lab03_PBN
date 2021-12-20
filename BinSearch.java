@@ -1,6 +1,7 @@
 // Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
 // APCS pd6
 // Lab03
+// 2021-12-16
 
 /**
    class BinSearch
