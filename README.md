@@ -1,7 +1,7 @@
-### Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
-### APCS
-### Lab03
-### 2021-12-21
+# Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
+# APCS
+# Lab03
+# 2021-12-21
 
 ### Tests Performed
 In our main method in the SearchDriver.java file, we created 5 long arrays:
