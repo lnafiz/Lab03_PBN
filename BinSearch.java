@@ -1,7 +1,6 @@
-// Clyde "Thluffy" Sinclair
-// APCS1 pd0
-// HW48 -- implementing linear and binary search on an ArrayList of Comparables
-// 2021-12-16r
+// Peanut Butter and Nutella - Prattay Dey + Winnie, Brian Li + Robert, Nafiz Labib + Martha
+// APCS pd6
+// Lab03
 
 /**
    class BinSearch
