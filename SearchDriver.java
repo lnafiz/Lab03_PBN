@@ -52,12 +52,12 @@ public class SearchDriver{
       linTimes[2] = recordTime_I(test2);
 
 
-      System.out.println("total time for linear search within test0 (ms): " + linTimes[0]);
-      System.out.println("total time for binary search within test0 (ms): " + binTimes[0]);
-      System.out.println("total time for linear search within test1 (ms): " + linTimes[1]);
-      System.out.println("total time for binary search within test1 (ms): " + binTimes[1]);
-      System.out.println("total time for linear search within test2 (ms): " + linTimes[2]);
-      System.out.println("total time for binary search within test2 (ms): " + binTimes[2]);
+      System.out.println("total time for linear search within test0 (ms): \t" + linTimes[0]);
+      System.out.println("total time for binary search within test0 (ms): \t" + binTimes[0]);
+      System.out.println("total time for linear search within test1 (ms): \t" + linTimes[1]);
+      System.out.println("total time for binary search within test1 (ms): \t" + binTimes[1]);
+      System.out.println("total time for linear search within test2 (ms): \t" + linTimes[2]);
+      System.out.println("total time for binary search within test2 (ms): \t" + binTimes[2]);
 
 
       System.out.println("avg time for linear search within test0 (ms): \t\t" + (linTimes[0] / (double)test0.length));
