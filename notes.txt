@@ -29,3 +29,12 @@ DISCO:
 
 QCC:
 - How many test cases should we have while also having a reasonable run time?
+
+// 2021-12-21
+
+GALLERY TOUR
+- In smaller datasets (around 1-100), linear search appears to be faster than binary search.
+- A possible worst case could be the target not being within the array.
+- Other groups had a average binary search time of 0 ms, but we suspect that is due to long not allowing for floating point division.
+- You can account for inital lag by running "throwaway" code first for meaningful measurements.
+- Other groups chose their targets as specifically the worst case, random case, or simply processing every element in the array.
