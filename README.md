@@ -57,7 +57,7 @@ avg time for binary search within test2 (ms):           7.833333333333333E-5
 binary search was 6070.893617021276x faster
 </pre>
 
-#### Trial 3: 
+#### TRIAL 2: 
 <pre>
 total time for linear search within test0 (ms):         14687
 total time for binary search within test0 (ms):         13
