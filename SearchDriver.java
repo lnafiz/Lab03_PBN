@@ -9,6 +9,7 @@ public class SearchDriver{
       for (int i = 0; i < iArr.length; i++){
         BinSearch.binSearch(iArr, iArr[i]); // runs binary search on each element of iArr
       }
+      BinSearch.binSearch(iArr, (int)iArr[0] - 1); // also searches for value not in index
       long elapsedTime = System.currentTimeMillis() - startTime;
       return elapsedTime; // returns total time for search of all items
     }
@@ -18,6 +19,7 @@ public class SearchDriver{
       for (int i = 0; i < iArr.length; i++){
         LinSearch.linSearch(iArr, iArr[i]); // runs linear search on each element of iArr
       }
+      LinSearch.linSearch(iArr, (int)iArr[0] - 1); // also searches for value not in index
       long elapsedTime = System.currentTimeMillis() - startTime;
       return elapsedTime; // returns total time for search of all items
     }
@@ -41,6 +43,12 @@ public class SearchDriver{
         test2[i] = i*2;
       }
 
+      // accounting for startup lag
+      System.out.println("test0: 20k indices");
+      System.out.println("test1: 40k indices");
+      System.out.println("test2: 60k indices");
+      System.out.println();
+
       // populates time arrays
       binTimes[0] = recordTime_B(test0);
       binTimes[1] = recordTime_B(test1);
@@ -48,7 +56,6 @@ public class SearchDriver{
       linTimes[0] = recordTime_I(test0);
       linTimes[1] = recordTime_I(test1);
       linTimes[2] = recordTime_I(test2);
-
 
       System.out.println("total time for linear search within test0 (ms): \t" + linTimes[0]);
       System.out.println("total time for binary search within test0 (ms): \t" + binTimes[0]);
@@ -59,15 +66,16 @@ public class SearchDriver{
 
       System.out.println();
 
-      System.out.println("avg time for linear search within test0 (ms): \t\t" + (linTimes[0] / (double)test0.length));
-      System.out.println("avg time for binary search within test0 (ms): \t\t" + (binTimes[0] / (double)test0.length));
-      System.out.println("binary search was " + ((linTimes[0] / (double)test0.length) / (binTimes[0] / (double)test0.length)) + "x faster");
-      System.out.println("avg time for linear search within test1 (ms): \t\t" + (linTimes[1] / (double)test1.length));
-      System.out.println("avg time for binary search within test1 (ms): \t\t" + (binTimes[1] / (double)test1.length));
-      System.out.println("binary search was " + ((linTimes[1] / (double)test1.length) / (binTimes[1] / (double)test1.length)) + "x faster");
-      System.out.println("avg time for linear search within test2 (ms): \t\t" + (linTimes[2] / (double)test2.length));
-      System.out.println("avg time for binary search within test2 (ms): \t\t" + (binTimes[2] / (double)test2.length));
-      System.out.println("binary search was " + ((linTimes[2] / (double)test2.length) / (binTimes[2] / (double)test2.length)) + "x faster");
+      // NOTE: // +1 accounts for additional out-of-index search
+      System.out.println("avg time for linear search within test0 (ms): \t\t" + (linTimes[0] / (double)(test0.length + 1)));
+      System.out.println("avg time for binary search within test0 (ms): \t\t" + (binTimes[0] / (double)(test0.length + 1)));
+      System.out.println("binary search was " + ((linTimes[0] / (double)(test0.length + 1)) / (binTimes[0] / (double)(test0.length + 1))) + "x faster");
+      System.out.println("avg time for linear search within test1 (ms): \t\t" + (linTimes[1] / (double)(test1.length + 1)));
+      System.out.println("avg time for binary search within test1 (ms): \t\t" + (binTimes[1] / (double)(test1.length + 1)));
+      System.out.println("binary search was " + ((linTimes[1] / (double)(test1.length + 1)) / (binTimes[1] / (double)(test1.length + 1))) + "x faster");
+      System.out.println("avg time for linear search within test2 (ms): \t\t" + (linTimes[2] / (double)(test2.length + 1)));
+      System.out.println("avg time for binary search within test2 (ms): \t\t" + (binTimes[2] / (double)(test2.length + 1)));
+      System.out.println("binary search was " + ((linTimes[2] / (double)(test2.length + 1)) / (binTimes[2] / (double)(test2.length + 1))) + "x faster");
 
     }
 
