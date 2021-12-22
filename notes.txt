@@ -33,8 +33,9 @@ QCC:
 // 2021-12-21
 
 GALLERY TOUR
+Main takeaways:
 - In smaller datasets (around 1-100), linear search appears to be faster than binary search.
 - A possible worst case could be the target not being within the array.
-- Other groups had a average binary search time of 0 ms, but we suspect that is due to long not allowing for floating point division.
+- Other groups had a average binary search time of 0 ms, but we suspect that is due to not typecasting to double prior to the calculation.
 - You can account for inital lag by running "throwaway" code first for meaningful measurements.
 - Other groups chose their targets as specifically the worst case, random case, or simply processing every element in the array.
