@@ -31,3 +31,8 @@
 - We added the average elapsed time for each search (binary and linear) within each array.
 - We added a print statement comparing how many times faster binary search was compared to linear search in each array.
 - Eliminated some clutter in the code.
+
+2021-12-21 19:00 EST
+- We added a search for a value outside of a dataset (worst case) and updated the Results in the Readme.md accordingly.
+- Revised the plan so it accurately reflects what we did.
+- Added more to gallery tour.
