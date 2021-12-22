@@ -39,3 +39,7 @@ Main takeaways:
 - Other groups had a average binary search time of 0 ms, but we suspect that is due to not typecasting to double prior to the calculation.
 - You can account for inital lag by running "throwaway" code first for meaningful measurements.
 - Other groups chose their targets as specifically the worst case, random case, or simply processing every element in the array.
+- An easy way we saw other groups ensure the target is not in the array is to set it as a negative number, while populating your array with only positive integers. 
+- Using Excel to display your data through graphs is a good way to showcase trends with the individual searches. 
+- You can also set up a graph showing the ratio of time for LinSearch and BinSearch. As the number of items increased, the slop of the line became steeper and steeper as LinSearch grew exponentially while BinSearch grew fairly linearly. 
+
